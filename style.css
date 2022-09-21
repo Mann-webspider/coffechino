@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    /* font-family: 'Abril Fatface', cursive; */
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(232, 181, 133); */
+    background-color: rgba(225, 181, 124, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border-radius: 18px;
+    width: 80vw;
+    height: 90vh;
+    /* overflow: hidden; */
+}
+.fade{
+    position: absolute;
+    width: 80vw;
+    height: 90vh;
+    border-radius: 18px;
+    background:linear-gradient(180deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2));
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Ruthie', cursive;
+    font-size: 36px;
+    color: #bb9356;
+    font-weight: 500;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li{
+    margin: 15px;
+    list-style: none;
+}
+.menu ul li:hover{
+    cursor: pointer;
+    color: #ebcc99;
+
+}
+.content{
+    position: relative;
+    
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: 80px;
+    
+    width: 70vw;
+    height: 60vh;
+}
+.img{
+    position: absolute;
+    z-index: 0;
+    width: 80vw;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 18px;
+}
+.creator{
+/* position: relative; */
+font-size: 20px;
+letter-spacing: 1px;
+margin-top: 150px;
+height: 100px;
+display: flex;
+justify-content: space-between;
+
+}
+.icon{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 60px;
+}
+.icon i{
+    margin-top: 15px;
+
+}
+.icon  :hover{
+    color: #bb9356;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content ::selection{
+background-color: black;
+color: #bb9356;
+}
